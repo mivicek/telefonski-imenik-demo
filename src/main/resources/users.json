@@ -1,0 +1,29 @@
+[	
+{	
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+	"id":47,
+	"ime":"Marko Markic",
+	"mobilni":"223234",
+	"poslovni":"767476",
+	"privatni":"456555674",
+	"fiksni":"23434423"
+	},
+	{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+	"id":65,
+	"ime":"Ivan Ivic",
+	"mobilni":"233324234",
+	"poslovni":"65612174",
+	"privatni":"45234654",
+	"fiksni":"2342323"
+	},
+	{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+	"id":88,
+	"ime":"Tomo Tomic",
+	"mobilni":"234234",
+	"poslovni":"65674",
+	"privatni":"45654",
+	"fiksni":"23423"
+	}
+]

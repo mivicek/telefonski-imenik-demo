@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+    <h:head>
+        <title><ui:insert name="title">Telefonski Imenik Demo1</ui:insert></title>
+    </h:head>
+    <h:body>
+        <p:link value="Pocetna" outcome="index.xhtml"/> <br />
+        <p:link value="Upis novog kontakta" outcome="noviUpis.xhtml"/> <br />
+        <p:link value="Ispis svih kontakata" outcome="sviKontakti.xhtml"/> <br />
+        <p:link value="Pretrazivanje imenika" outcome="pretrazi.xhtml"/> <br />
+        
+        <div class="ui-grid ui-grid-responsive">
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-1"></div>
+                <div class="ui-grid-col-10"></div>
+                <div class="ui-grid-col-10"></div>
+            </div>
+            <div class="ui-grid-row">
+                <div class="ui-grid-col-3"></div>
+                <div class="ui-grid-col-6">
+                    <p:growl for="errors" showDetail="true" autoUpdate="true"/>
+                    <ui:insert name="content">Defa	ult content</ui:insert>
+                </div>
+                <div class="ui-grid-col-3"></div>
+            </div>
+        </div>
+        <br/><br/>
+        <h:outputText value="Oakdale Software Tutorial" style="font-style: italic"/>
+    </h:body>
+</f:view>
+</html>

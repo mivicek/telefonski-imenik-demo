@@ -1,0 +1,18 @@
+	
+
+
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
+
+# Enable spring data repos 
+spring.data.jpa.repositories.enabled=true
+
+# Replace with your connection string          ---mojabaza1.db.4472131.357.hostedresource.net
+spring.datasource.url=jdbc:mysql://mojabaza1.db.4472131.357.hostedresource.net
+
+# Replace with your credentials
+spring.datasource.username=mojabaza1
+spring.datasource.password=Test123!
+
+spring.datasource.driverClassName=com.mysql.jdbc.Driver

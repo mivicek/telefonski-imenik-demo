@@ -1,0 +1,36 @@
+                	
+                	<p:outputLabel value="#{user.ime}"/>
+                    <p:inputText id="ime" placeholder="#{user.ime}" value="#{user.ime}" size="20" maxlenght="50" required="required" >
+                   	<f:validateLength minimum="2" /> 
+                    </p:inputText>
+                    
+
+                
+                    <p:outputLabel value="Mobilni : "/>
+                    <h:outputText value="#{user.mobilni}"/>
+				    <p:outputLabel value="Novi mobilni : "/>
+                    <p:inputText id="ime" value="#{user.mobilni}" size="20" >
+                    </p:inputText>
+                    
+              		<p:outputLabel value="Poslovni : "/>
+                    <h:outputText value="#{user.poslovni}"/>
+                    <p:outputLabel value="Novi poslovni : "/>
+                    <p:inputText id="poslovni" value="#{user.poslovni}" size="20" >
+                    </p:inputText>
+                    
+                    
+                	<p:outputLabel value="Privatni : "/>
+               		<h:outputText value="#{user.privatni}"/>
+                    <p:outputLabel value="Novi privatni : "/>
+                    <p:inputText id="privatni" value="#{user.privatni}" size="20"  >
+                   	<f:validateLength minimum="2" /> 
+                    </p:inputText>
+                    
+                	<p:outputLabel value="Fiksni : "/>
+                	<h:outputText value="#{user.fiksni}"/> 
+                    <p:outputLabel value="Novi fiksni : "/>              	
+                    <p:inputText id="fiksni" value="#{user.fiksni}" size="20" >
+                   	<f:validateLength minimum="2" /> 
+                    </p:inputText>
+                    
+      

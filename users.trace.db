@@ -1,0 +1,90 @@
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER" already exists; SQL statement:
+create table user [42101-185]
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "([*]"; expected "(, SELECT, FROM"; SQL statement:
+( [42001-185]
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] INTEGER NOT NULL, "; expected "INSERT, {"; SQL statement:
+id integer not null, [42001-185]
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "IME[*] VARCHAR(255) NOT NULL, "; expected "INSERT, {"; SQL statement:
+ime varchar(255) not null, [42001-185]
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "MOBILNI[*] VARCHAR(255), "; expected "MERGE, {"; SQL statement:
+mobilni varchar(255), [42001-185]
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "POSLOVNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
+poslovni varchar(255), [42001-185]
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIVATNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
+privatni varchar(255), [42001-185]
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIKSNI[*] VARCHAR(255), "; expected "FROM, {"; SQL statement:
+fiksni varchar(255), [42001-185]
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIMARY[*] KEY(ID) "; expected "PREPARE, {"; SQL statement:
+primary key(id) [42001-185]
+06-12 00:54:04 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")[*]"; SQL statement:
+) [42000-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER" already exists; SQL statement:
+create table user [42101-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "([*]"; expected "(, SELECT, FROM"; SQL statement:
+( [42001-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] INTEGER NOT NULL, "; expected "INSERT, {"; SQL statement:
+id integer not null, [42001-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "IME[*] VARCHAR(255) NOT NULL, "; expected "INSERT, {"; SQL statement:
+ime varchar(255) not null, [42001-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "MOBILNI[*] VARCHAR(255), "; expected "MERGE, {"; SQL statement:
+mobilni varchar(255), [42001-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "POSLOVNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
+poslovni varchar(255), [42001-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIVATNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
+privatni varchar(255), [42001-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIKSNI[*] VARCHAR(255), "; expected "FROM, {"; SQL statement:
+fiksni varchar(255), [42001-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIMARY[*] KEY(ID) "; expected "PREPARE, {"; SQL statement:
+primary key(id) [42001-185]
+06-12 00:55:23 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")[*]"; SQL statement:
+) [42000-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER" already exists; SQL statement:
+create table user [42101-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "([*]"; expected "(, SELECT, FROM"; SQL statement:
+( [42001-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] INTEGER NOT NULL, "; expected "INSERT, {"; SQL statement:
+id integer not null, [42001-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "IME[*] VARCHAR(255) NOT NULL, "; expected "INSERT, {"; SQL statement:
+ime varchar(255) not null, [42001-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "MOBILNI[*] VARCHAR(255), "; expected "MERGE, {"; SQL statement:
+mobilni varchar(255), [42001-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "POSLOVNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
+poslovni varchar(255), [42001-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIVATNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
+privatni varchar(255), [42001-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIKSNI[*] VARCHAR(255), "; expected "FROM, {"; SQL statement:
+fiksni varchar(255), [42001-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIMARY[*] KEY(ID) "; expected "PREPARE, {"; SQL statement:
+primary key(id) [42001-185]
+06-12 01:35:57 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")[*]"; SQL statement:
+) [42000-185]
