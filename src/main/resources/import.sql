@@ -1,15 +1,15 @@
 
 
-create table user
-(
-	id integer not null,
-	ime varchar(255) not null,
-	mobilni varchar(255),
-	poslovni varchar(255),
-	privatni varchar(255),
-	fiksni varchar(255),
-	primary key(id)
-);
+-- create table user
+-- (
+--	id integer not null,
+--	ime varchar(255) not null,
+--	mobilni varchar(255),
+--	poslovni varchar(255),
+--	privatni varchar(255),
+--	fiksni varchar(255),
+--	primary key(id)
+--);
 
 
 

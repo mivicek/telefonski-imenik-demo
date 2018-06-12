@@ -104,7 +104,7 @@ public class UserModel {
         this.user.setFiksni(found.getFiksni());
     }
 
-    // moj prvi Java search algoritam  :)
+    // pretrazi sve  
     public List<UserView> findUserBySve() {
     	System.out.println("findUserByIme START i:" + this.user.getIme());
     	String keyword = this.user.getIme().toString().toLowerCase();
@@ -168,15 +168,11 @@ public class UserModel {
           + " tip: " + searchMobilni.getClass().getName() + "  " +  keyword.getClass().getName());
           
           
-        //if (((searchIme != null) && (searchMobilni != null) && (searchPoslovni != null) &&  (searchPrivatni != null) && (searchFiksni != null)) && 
         if ((searchIme.toLowerCase().contains(keyword)) || (searchMobilni.toLowerCase().contains(keyword)) || 
         		(searchPoslovni.toLowerCase().contains(keyword)) || (searchPrivatni.toLowerCase().contains(keyword)) || (searchFiksni.toLowerCase().contains(keyword)))
         {
         	  
         System.out.println("keyword: " + keyword + " , searchIme: " + searchIme + "key i mob"   + keyword.equals(searchMobilni) + "  isti tip: " +searchMobilni.getClass().getName() + "  " + keyword + "  " +  keyword.getClass().getName()); 
-        //if (ime.equals(entity2) ) {
-        //System.out.println("entity.getIme(): " + entity.getIme() + "  , ime= "+ keyword );
-          
         view.setId(entity.getId());
         view.setIme(entity.getIme());
         view.setMobilni(entity.getMobilni());
@@ -189,24 +185,21 @@ public class UserModel {
       }
     	System.out.println("findUserByIme KRAJ");
     	System.out.println("users: " + users);
+    	
+    	
+    	
       return users;
+      
     }
     
     
     
     
-    //radi
+    //pretraga po imenu
     public List<UserView> findUserByIme() {
     	System.out.println("findUserByIme START");
     	
     	List<UserView> users = new ArrayList<UserView>();
-    
-        //List<UserView> users = userRepository.findByIme();
-    	//List<User> users = userRepository.findByIme();
-        //List<UserView> users = new ArrayList<UserView>();
-    	
-    	//User found = userRepository.findOne(this.user.getIme());
-    	
     	String ime = this.user.getIme();
     	System.out.println("keyword ime: " + ime);
     	

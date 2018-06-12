@@ -10,46 +10,9 @@
     <ui:composition template="layout.xhtml">
 
         <ui:define name="content">
-            <h:form id="userForm" prependId="false">
-            <p:fieldset legend="Upis novog kontakta">
-                <h:panelGrid columns="2" border="0"  layout="grid" style="margin: 20px;">
-                    <p:outputLabel value="Ime : "/>
-                    <p:inputText id="ime" value="#{user.ime}" size="20" minlength="2" maxlenght="50" required="true" style="color:red"> 
-                    	 <f:validateLength minimum="2" maximum="50" />
-                    </p:inputText>
-                    <p:outputLabel value="Mobilni : "/>
-                    <p:inputText id="mobilni" value="#{user.mobilni}"/>
-                    
-                    <p:outputLabel value="Poslovni : "/>
-                    <p:inputText id="poslovni" value="#{user.poslovni}" />
-                    
-                    <p:outputLabel value="Privatni : "/>
-                    <p:inputText id="privatni" value="#{user.privatni}"/>
-                    
-                    <p:outputLabel value="Fiksni : "/>
-                    <p:inputText id="fiksni" value="#{user.fiksni}"/>
-                 </h:panelGrid>
-            <p:commandButton value="Potvrdi" update="userlist,ime,mobilni,poslovni,privatni,fiksni" actionListener="#{model.doCreateUser()}"/>
-    		</p:fieldset>
-			
-                <br/>
-                <h3 class="title ui-widget-header ui-corner-all" style="font-family: Arial, sans-serif; padding: 5px">Popis kontakata</h3>
-                <p:dataTable id="userlist" value="#{model.findAllUsers()}" var="bk" border="1" >
-                    <p:column>
-                        <f:facet name="header">
-                            <h:outputText value="ime"/>
-                        </f:facet>
-                        <p:link outcome="viewUser.xhtml?id=#{bk.id}" value="#{bk.ime}"     />
-                    </p:column>
-                    <p:column>
-                        <f:facet name="header">
-                            <h:outputText value="Poslovni"/>
-                        </f:facet>
-                        <h:outputText value="#{bk.poslovni}"/>
-                    </p:column>
-                </p:dataTable>
-            </h:form>
+                <h3 class="title ui-widget-header ui-corner-all" style="font-family: Arial, sans-serif; padding: 5px">Dobrodošli na telefonski imenik</h3>
+                         
         </ui:define>
-                    	<!--  <f:validateLength minimum="2" />  -->  <!--  <f:validateLength minimum="2" />  --> 
+                    	
     </ui:composition>
 </html>

@@ -8,23 +8,29 @@
       xmlns:p="http://primefaces.org/ui">
 <f:view>
     <h:head>
-        <title><ui:insert name="title">Telefonski Imenik Demo1</ui:insert></title>
+        <title><ui:insert name="title">Telefonski Imenik Demo</ui:insert></title>
     </h:head>
     <h:body>
-        <p:link value="Pocetna" outcome="index.xhtml"/> <br />
-        <p:link value="Upis novog kontakta" outcome="noviUpis.xhtml"/> <br />
-        <p:link value="Ispis svih kontakata" outcome="sviKontakti.xhtml"/> <br />
-        <p:link value="Pretrazivanje imenika" outcome="pretrazi.xhtml"/> <br />
-        
+    <p:tabMenu activeIndex="#{param.i}">
+    <p:menuitem value="Početna" outcome="index.xhtml" icon="ui-icon-star">
+        <f:param name="i" value="0" />
+    </p:menuitem>
+    <p:menuitem value="Svi kontakti" outcome="sviKontakti.xhtml" icon="ui-icon-document" >
+        <f:param name="i" value="1" />
+    </p:menuitem>   
+       <p:menuitem value="Upis kontakta" outcome="noviUpis.xhtml" icon="ui-icon-person" >
+        <f:param name="i" value="2" />
+    </p:menuitem> 
+    <p:menuitem value="Pretraživanje" outcome="pretrazi.xhtml"  icon="ui-icon-search" >
+        <f:param name="i" value="3" />
+    </p:menuitem>
+</p:tabMenu>
         <div class="ui-grid ui-grid-responsive">
+
             <div class="ui-grid-row">
-                <div class="ui-grid-col-1"></div>
-                <div class="ui-grid-col-10"></div>
-                <div class="ui-grid-col-10"></div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-3"></div>
-                <div class="ui-grid-col-6">
+                <div class="ui-grid-col-0	"></div>
+                <div class="ui-grid-col-8">
+                <div class="ui-grid-col-2"></div>
                     <p:growl for="errors" showDetail="true" autoUpdate="true"/>
                     <ui:insert name="content">Defa	ult content</ui:insert>
                 </div>
@@ -32,7 +38,7 @@
             </div>
         </div>
         <br/><br/>
-        <h:outputText value="Oakdale Software Tutorial" style="font-style: italic"/>
+
     </h:body>
 </f:view>
 </html>

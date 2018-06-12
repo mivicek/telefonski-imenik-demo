@@ -8,19 +8,10 @@
       xmlns:p="http://primefaces.org/ui"  >
       
     <ui:composition template="layout.xhtml">
-
         <ui:define name="content">
             <h:form id="userForm" prependId="false">
-                <br/>
                 <h3 class="title ui-widget-header ui-corner-all" style="font-family: Arial, sans-serif; padding: 5px">Popis kontakata</h3>
                 <p:dataTable id="userlist" value="#{model.findAllUsers()}" var="bk" border="1" >
-                	<p:column>
-                        <f:facet name="header">
-                            <h:outputText value="Izmjene"/>
-                             
-                        </f:facet>
-                        <p:link outcome="izmjeniKontakt.xhtml?id=#{bk.id}" value="promjeni"     />
-                    </p:column>
                     <p:column>
                         <f:facet name="header">
                             <h:outputText value="ime"/>
@@ -61,7 +52,12 @@
                         </f:facet>
                         <h:outputText value="#{bk.id}"/>
                     </p:column>
-                    
+                	<p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Izmjene"/>
+                        </f:facet>
+                        <p:button outcome="izmjeniKontakt.xhtml?id=#{bk.id}" value="promjeni"   />
+                    </p:column>                    
 
                 </p:dataTable>
             </h:form>

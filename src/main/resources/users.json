@@ -1,7 +1,7 @@
 [	
-{	
+	{	
 	"_class":"com.oakdalesoft.bootfaces.domain.User",
-	"id":47,
+	"id":1,
 	"ime":"Marko Markic",
 	"mobilni":"223234",
 	"poslovni":"767476",
@@ -10,7 +10,7 @@
 	},
 	{
 	"_class":"com.oakdalesoft.bootfaces.domain.User",
-	"id":65,
+	"id":2,
 	"ime":"Ivan Ivic",
 	"mobilni":"233324234",
 	"poslovni":"65612174",
@@ -19,11 +19,99 @@
 	},
 	{
 	"_class":"com.oakdalesoft.bootfaces.domain.User",
-	"id":88,
-	"ime":"Tomo Tomic",
+	"id":3,
+	"ime":"Tomo Tomić",
 	"mobilni":"234234",
 	"poslovni":"65674",
 	"privatni":"45654",
 	"fiksni":"23423"
-	}
+	},
+	{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+    "id": 4,
+    "ime": "Ivan Ivic",
+    "mobilni": "091555666",
+    "poslovni": "098555666",
+    "privatni": "",
+    "fiksni": "01111111"
+	},	
+	{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+    "id": 5,
+    "ime": "Marko Horvat",
+    "mobilni": "",
+    "poslovni": "",
+    "privatni": "",
+    "fiksni": "012222222"
+	},
+	{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+    "id": 6,
+    "ime": "Goran Goranović",
+    "mobilni": "",
+    "poslovni": "0922223333",
+    "privatni": "",
+    "fiksni": "013456789"
+	},
+	{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+    "id": 7,
+    "ime": "Ivana Ivić",
+    "mobilni": "",
+    "poslovni": "",
+    "privatni": "0929876543",
+    "fiksni": "011234567"
+	},	
+	{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+    "id": 8,
+    "ime": "Tomislav Horvat",
+    "mobilni": "0983453456",
+    "poslovni": "091111222",
+    "privatni": "",
+    "fiksni": ""
+	}	
+	,	
+	{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+    "id": 9,
+    "ime": "Mirko Mirković",
+    "mobilni": "",
+    "poslovni": "0913332987",
+    "privatni": "",
+    "fiksni": "023333334"
+}	
+,	
+{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+    "id": 10,
+    "ime": "Marin Iviček",
+    "mobilni": "0915444277",
+    "poslovni": "",
+    "privatni": "",
+    "fiksni": "013816382"
+}	
+,	
+{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+    "id": 11,
+    "ime": "Ana Anić",
+    "mobilni": "091987654",
+    "poslovni": "",
+    "privatni": "",
+    "fiksni": ""
+}	
+,	
+{
+	"_class":"com.oakdalesoft.bootfaces.domain.User",
+    "id": 12,
+    "ime": "Marija Marić",
+    "mobilni": "",
+    "poslovni": "",
+    "privatni": "",
+    "fiksni": "019998888"
+}
+
+	
+	
 ]

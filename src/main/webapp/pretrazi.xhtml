@@ -8,37 +8,24 @@
       xmlns:p="http://primefaces.org/ui"  >
       
     <ui:composition template="layout.xhtml">
-
         <ui:define name="content">
             <h:form id="userForm" prependId="false">
             <p:fieldset legend="Pretraga kontakta">
                 <h:panelGrid columns="2" border="0"  layout="grid" style="margin: 20px;">
-                    <p:outputLabel value="Ime : "/>
-                    <p:inputText id="ime" value="#{user.ime}" size="20" maxlenght="50" required="required" >
+                    <p:outputLabel value="Unesite pretragu"/>
+                    <p:inputText id="ime" value="#{ime}" size="20" maxlenght="50" required="required" >
                     	<f:validateLength minimum="2" /> 
                     </p:inputText>
-                    
                  </h:panelGrid>
                  
-                 <p:link outcome="rezultatPretrage.xhtml?ime=Tomo" value="Po imenu"     />
-                 <p:link outcome="rezultatPretrageSvega.xhtml?ime=091" value="Po svim poljima"  />
-                 
-                 
-                 
-                  <!--
-                    <p:commandButton value="Po imenu" outcome="rezultatPretrage.xhtml?kwd=#{user.ime}"/>
-                 <p:link outcome="rezultatPretrage.xhtml?kwd=#{user.ime}" value="promjeni"     />
-                 <p:commandButton value="Po imenu" actionListener="izmjeniKontakt.xhtml?id=#{user.ime}"/>
-                 
-                 
-                 
-                   <p:link outcome="izmjeniKontakt.xhtml?id=#{bk.id}" value="promjeni"     /> -->
-            <!--    -->
-    		</p:fieldset>
-			
-                
-            </h:form>
+                 <p:button outcome="rezultatPretrage.xhtml?ime=#{ime}" value="Po imenu" >
+  				 	<f:param name="ime" value="#{id}" update="ime" />
+				 </p:button>
+				 <p:button outcome="rezultatPretrageSvega.xhtml?ime=#{ime}" value="Po svim poljima" >
+  				 	<f:param name="ime" value="#{ime}" update="ime" />
+				 </p:button>
+     		</p:fieldset>
+           </h:form>
         </ui:define>
-
     </ui:composition>
 </html>

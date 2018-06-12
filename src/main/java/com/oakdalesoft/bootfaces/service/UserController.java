@@ -1,9 +1,7 @@
 package com.oakdalesoft.bootfaces.service;
-
 import com.oakdalesoft.bootfaces.domain.User;
 import com.oakdalesoft.bootfaces.persistence.UserRepository;
 import com.oakdalesoft.bootfaces.util.CustomErrorType;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpHeaders;
@@ -37,15 +35,15 @@ public class UserController {
             // You many decide to return HttpStatus.NOT_FOUND
         }
         return new ResponseEntity<List<User>>(users, HttpStatus.OK);
-    }
+    }	
  
     // pojedinacni kontakt
     @RequestMapping(value = "/service/user/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> getUser(@PathVariable("id") long id) {
-        //logger.info("Fetching User with id {}", id);
+
         User user = userRepository.findOne(id);  //findById(id)
         if (user == null) {
-            //logger.error("User with id {} not found.", id);
+ 
             return new ResponseEntity(new CustomErrorType("User with id " + id 
                     + " not found"), HttpStatus.NOT_FOUND);
         }
@@ -70,38 +68,63 @@ public class UserController {
         return new ResponseEntity<String>(headers, HttpStatus.CREATED);
     }
  
-    // izmjeni kontakt
-    @RequestMapping(value = "/service/user/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<?> updateUser(@PathVariable("id") long id, @RequestBody User user) {
+     //@RequestMapping(value = "/user/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    //public ResponseEntity<User> getUser(@PathVariable("id") long id) {
+    //, @RequestBody MediaType APPLICATION_JSON_VALUE
+    
+   //consumes = MediaType.APPLICATION_JSON_VALUE
+    
+    
+    //novi kontakt
+    @RequestMapping(value = "/service/user/create/", method = RequestMethod.POST)
+    public void insertUser(@RequestBody User user, UriComponentsBuilder ucBuilder, MediaType APPLICATION_JSON_UTF8){
+        userRepository.save(user); // userRepository.save(user);
+    }
+  
+    	
+  
+    /*
+    @RequestMapping(value = "/service/user/{id}/", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public @ResponseBody ResponseEntity<?> updateUser(@PathVariable("id") long id, @RequestBody User user, UriComponentsBuilder ucBuilder) {
+    	   	
         //logger.info("Updating User with id {}", id);
- 
-        User currentUser = userRepository.findOne(id);
- 
-        if (currentUser == null) {
+    	User oldUser = userRepository.findOne(id);
+    	System.out.println("Update REST START");
+        //User updated = userRepository.findOne(id);
+        User updated = new User();
+        
+        
+        updated.setId(id);   //onemoguciti promjenu
+        updated.setIme(user.getIme());
+        updated.setMobilni(user.getMobilni());
+        updated.setPoslovni(user.getPoslovni());
+        updated.setPrivatni(user.getPrivatni());
+        updated.setFiksni(user.getFiksni());
+        
+        
+        //User updated = this.userRepository.save(updated);
+
+        if (updated == null) {
             //logger.error("Unable to update. User with id {} not found.", id);
             return new ResponseEntity(new CustomErrorType("Unable to upate. User with id " + id + " not found."),
                     HttpStatus.NOT_FOUND);
         }
-        currentUser.setIme(user.getIme());
-        currentUser.setMobilni(user.getMobilni());
-        currentUser.setPoslovni(user.getPoslovni());
-        currentUser.setMobilni(user.getMobilni());
-        currentUser.setPoslovni(user.getPoslovni());
-        userRepository.save(currentUser);          //user rep dodan mozda userRepository.save(currentUser);     org userRepository.doUpdateUser(currentUser); 
-        return new ResponseEntity<User>(currentUser, HttpStatus.OK);
+
+        
+        userRepository.save(updated);           
+        return new ResponseEntity<User>(updated, HttpStatus.OK);
     }
- 
     
+    */
+    
+     
     
     // pobrisi kontakt
     @RequestMapping(value = "/service/user/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<?> deleteUser(@PathVariable("id") long id) {
-        //logger.info("Fetching & Deleting User with id {}", id);
- 
         User user = userRepository.findOne(id);  //findById(id);
         System.out.println("FINDING to delete");
         if (user == null) {
-            //logger.error("Unable to delete. User with id {} not found.", id);
             return new ResponseEntity(new CustomErrorType("Kontakt nije pobrisan, " + id + " nije pronadjen."),
                     HttpStatus.NOT_FOUND);
         }
@@ -109,11 +132,7 @@ public class UserController {
         System.out.println("deleted");
         return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
     }
- 
- 
     // pobrisi sve kontakte
- 
-    
     @RequestMapping(value = "/service/user/", method = RequestMethod.DELETE)
     public ResponseEntity<User> deleteAllUsers() {
         //logger.info("Deleting All Users");
@@ -124,133 +143,8 @@ public class UserController {
     
     
     }
-	
-};    
-
-
+}	
+  
     
     
     
-    
-    
-    
-    
-    /* 
-    //------------------- Update a User --------------------------------------------------------
-     
-    @RequestMapping(value = "/user/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<User> updateUser(@PathVariable("id") long id, @RequestBody User user) {
-        System.out.println("Updating User " + id);
-         
-        User currentUser = userRepository.findById(id);
-         
-        if (currentUser==null) {
-            System.out.println("User with id " + id + " not found");
-            return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
-        }
- 
-        currentUser.setIme(user.getIme());
-        currentUser.setMobilni(user.getMobilni());
-        currentUser.setPoslovni(user.getPoslovni());
-        currentUser.setMobilni(user.getMobilni());
-        currentUser.setPoslovni(user.getPoslovni());
-
-        
-         
-        userRepository.updateUser(currentUser);
-        return new ResponseEntity<User>(currentUser, HttpStatus.OK);
-    }
-
-	
-    @Autowired
-    private UserRepository userRepository;
-
-    @RequestMapping("/service/users")
-    public @ResponseBody
-    Iterable<User> getAllUsers() {
-        return this.userRepository.findAll();
-    }
-    
-    @RequestMapping(value="/service/user/{id}", method=RequestMethod.GET)
-    public @ResponseBody 
-    User getUserById(@PathVariable Long id) {
-    	//if (method="RequestMethod.GET")
-    	System.out.println("FINDING");
-        return this.userRepository.findOne(id);
-        
-    }
-    
-    
-    //wohooo moj prvi api
-    @RequestMapping(value="/service/user/{id}", method=RequestMethod.DELETE)
-    public @ResponseBody 
-    User deleteUserById(@PathVariable Long id) {
-    	this.userRepository.delete(id);
-    	System.out.println("DELETING");
-        //return "sdfasdfadsf";
-		return this.user(HttpStatus.NO_CONTENT);
-        
-    }
-    
-    
-    /*
-    //wohooo moj prvi api
-    @RequestMapping(value="/service/user/{id}", method=RequestMethod.DELETE)
-    public @ResponseBody 
-    User deleteUserById(@PathVariable Long id) {
-    	//this.userRepository.delete(id);
-    	//System.out.println("DELETING");
-        return this.deleteUserById(id);
-		//return "System.out.println("deleting")";
-        
-    }
-
-    
-    
-    
-    
-    //do tud radi
-    
-
-    //------------------- Delete a User --------------------------------------------------------
-    
-    @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE)
-    public ResponseEntity<User> deleteUser(@PathVariable("id") long id) {
-        System.out.println("Fetching & Deleting User with id " + id);
- 
-        User user = userService.findById(id);
-        if (user == null) {
-            System.out.println("Unable to delete. User with id " + id + " not found");
-            return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
-        }
- 
-        userService.deleteUserById(id);
-        return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
-    }
-    */
- 
-    /*
-    @RequestMapping(value = "/user/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<User> getUser(@PathVariable("id") long id) {
-        System.out.println("Fetching User with id " + id);
-        User user = userService.findById(id);
-        if (user == null) {
-            System.out.println("User with id " + id + " not found");
-            return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
-        }
-        return new ResponseEntity<User>(user, HttpStatus.OK);
-    }
-    
-    */
-    /*-------------------Retrieve All Users--------------------------------------------------------
-    
-    @RequestMapping(value = "/user/", method = RequestMethod.GET)
-    public ResponseEntity<List<User>> listAllUsers() {
-        List<User> users = userService.findAllUsers();
-        if(users.isEmpty()){
-            return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);//You many decide to return HttpStatus.NOT_FOUND
-        }
-        return new ResponseEntity<List<User>>(users, HttpStatus.OK);
-    }
-    */
-

@@ -1,90 +1,155 @@
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Table "USER" already exists; SQL statement:
-create table user [42101-185]
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "([*]"; expected "(, SELECT, FROM"; SQL statement:
-( [42001-185]
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] INTEGER NOT NULL, "; expected "INSERT, {"; SQL statement:
-id integer not null, [42001-185]
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "IME[*] VARCHAR(255) NOT NULL, "; expected "INSERT, {"; SQL statement:
-ime varchar(255) not null, [42001-185]
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "MOBILNI[*] VARCHAR(255), "; expected "MERGE, {"; SQL statement:
-mobilni varchar(255), [42001-185]
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "POSLOVNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
-poslovni varchar(255), [42001-185]
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIVATNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
-privatni varchar(255), [42001-185]
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIKSNI[*] VARCHAR(255), "; expected "FROM, {"; SQL statement:
-fiksni varchar(255), [42001-185]
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIMARY[*] KEY(ID) "; expected "PREPARE, {"; SQL statement:
-primary key(id) [42001-185]
-06-12 00:54:04 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")[*]"; SQL statement:
-) [42000-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Table "USER" already exists; SQL statement:
-create table user [42101-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "([*]"; expected "(, SELECT, FROM"; SQL statement:
-( [42001-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] INTEGER NOT NULL, "; expected "INSERT, {"; SQL statement:
-id integer not null, [42001-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "IME[*] VARCHAR(255) NOT NULL, "; expected "INSERT, {"; SQL statement:
-ime varchar(255) not null, [42001-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "MOBILNI[*] VARCHAR(255), "; expected "MERGE, {"; SQL statement:
-mobilni varchar(255), [42001-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "POSLOVNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
-poslovni varchar(255), [42001-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIVATNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
-privatni varchar(255), [42001-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIKSNI[*] VARCHAR(255), "; expected "FROM, {"; SQL statement:
-fiksni varchar(255), [42001-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIMARY[*] KEY(ID) "; expected "PREPARE, {"; SQL statement:
-primary key(id) [42001-185]
-06-12 00:55:23 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")[*]"; SQL statement:
-) [42000-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Table "USER" already exists; SQL statement:
-create table user [42101-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "([*]"; expected "(, SELECT, FROM"; SQL statement:
-( [42001-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "ID[*] INTEGER NOT NULL, "; expected "INSERT, {"; SQL statement:
-id integer not null, [42001-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "IME[*] VARCHAR(255) NOT NULL, "; expected "INSERT, {"; SQL statement:
-ime varchar(255) not null, [42001-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "MOBILNI[*] VARCHAR(255), "; expected "MERGE, {"; SQL statement:
-mobilni varchar(255), [42001-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "POSLOVNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
-poslovni varchar(255), [42001-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIVATNI[*] VARCHAR(255), "; expected "PREPARE, {"; SQL statement:
-privatni varchar(255), [42001-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "FIKSNI[*] VARCHAR(255), "; expected "FROM, {"; SQL statement:
-fiksni varchar(255), [42001-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "PRIMARY[*] KEY(ID) "; expected "PREPARE, {"; SQL statement:
-primary key(id) [42001-185]
-06-12 01:35:57 jdbc[12]: exception
-org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement ")[*]"; SQL statement:
-) [42000-185]
+06-12 20:53:39 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: Reading from cache:nio:C:/app/users.mv.db failed; file length 221184 read length 384 at 221515 [1.4.185/1]" [50000-185]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:377)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:360)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2769)
+	at org.h2.mvstore.db.MVTableEngine$Store.<init>(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:98)
+	at org.h2.engine.Database.getPageStore(Database.java:2379)
+	at org.h2.engine.Database.open(Database.java:666)
+	at org.h2.engine.Database.openDatabase(Database.java:266)
+	at org.h2.engine.Database.<init>(Database.java:260)
+	at org.h2.engine.Engine.openSession(Engine.java:60)
+	at org.h2.engine.Engine.openSession(Engine.java:167)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:145)
+	at org.h2.engine.Engine.createSession(Engine.java:128)
+	at org.h2.engine.Engine.createSession(Engine.java:26)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:347)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:307)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:699)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:633)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:484)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:142)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1887)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1845)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:852)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1625)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.oakdalesoft.bootfaces.Application.main(Application.java:35)
+Caused by: org.h2.jdbc.JdbcSQLException: General error: "java.lang.IllegalStateException: Reading from cache:nio:C:/app/users.mv.db failed; file length 221184 read length 384 at 221515 [1.4.185/1]" [50000-185]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 62 more
+Caused by: java.lang.IllegalStateException: Reading from cache:nio:C:/app/users.mv.db failed; file length 221184 read length 384 at 221515 [1.4.185/1]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:443)
+	at org.h2.mvstore.FileStore.readFully(FileStore.java:98)
+	at org.h2.mvstore.Page.read(Page.java:189)
+	at org.h2.mvstore.MVStore.readPage(MVStore.java:1830)
+	at org.h2.mvstore.MVMap.readPage(MVMap.java:736)
+	at org.h2.mvstore.Page.getChildPage(Page.java:216)
+	at org.h2.mvstore.Cursor.min(Cursor.java:129)
+	at org.h2.mvstore.Cursor.hasNext(Cursor.java:36)
+	at org.h2.mvstore.MVStore.readFileHeader(MVStore.java:695)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:357)
+	... 57 more
+Caused by: java.io.EOFException
+	at org.h2.mvstore.DataUtils.readFully(DataUtils.java:431)
+	... 66 more
+06-12 21:06:09 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/app/users.mv.db [1.4.185/7]" [50000-185]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:377)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:360)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2769)
+	at org.h2.mvstore.db.MVTableEngine$Store.<init>(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:98)
+	at org.h2.engine.Database.getPageStore(Database.java:2379)
+	at org.h2.engine.Database.open(Database.java:666)
+	at org.h2.engine.Database.openDatabase(Database.java:266)
+	at org.h2.engine.Database.<init>(Database.java:260)
+	at org.h2.engine.Engine.openSession(Engine.java:60)
+	at org.h2.engine.Engine.openSession(Engine.java:167)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:145)
+	at org.h2.engine.Engine.createSession(Engine.java:128)
+	at org.h2.engine.Engine.createSession(Engine.java:26)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:347)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:307)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:200)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:699)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:633)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:484)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:142)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:115)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:102)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:126)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206)
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1887)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1845)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:852)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:343)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1625)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:956)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:747)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:957)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:946)
+	at com.oakdalesoft.bootfaces.Application.main(Application.java:35)
+Caused by: org.h2.jdbc.JdbcSQLException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/app/users.mv.db [1.4.185/7]" [50000-185]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 62 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/app/users.mv.db [1.4.185/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:170)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:346)
+	... 57 more
